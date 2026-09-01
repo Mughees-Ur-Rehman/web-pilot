@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>W</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPilot - Free Online Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">W</span>
+            <span>Web<span>Pilot</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#tools">Tools</a>
+            <a href="#categories">Categories</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-btn" id="themeBtn">☾</button>
+            <button class="login-btn">Login</button>
+            <button class="get-started">Get Started</button>
+        </div>
+
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="container hero-content">
+
+        <div class="badge">
+            <span>✦</span> Powerful tools. One simple platform.
+        </div>
+
+        <h1>
+            Everything you need to
+            <span>work smarter.</span>
+        </h1>
+
+        <p>
+            Free online tools designed to make your daily work
+            faster, easier and more productive.
+        </p>
+
+        <div class="hero-search">
+            <span>⌕</span>
+            <input
+                type="text"
+                id="heroSearch"
+                placeholder="Search for a tool..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="quick-links">
+            <span>Popular:</span>
+            <button data-search="QR Code Generator">QR Code</button>
+            <button data-search="Password Generator">Password Generator</button>
+            <button data-search="Word Counter">Word Counter</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+    <div class="container stats-grid">
+
+        <div class="stat">
+            <strong>50+</strong>
+            <span>Free Tools</span>
+        </div>
+
+        <div class="stat">
+            <strong>1M+</strong>
+            <span>Users</span>
+        </div>
+
+        <div class="stat">
+            <strong>100%</strong>
+            <span>Free</span>
+        </div>
+
+        <div class="stat">
+            <strong>24/7</strong>
+            <span>Available</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>CATEGORIES</span>
+            <h2>Tools for every task</h2>
+            <p>Everything you need, organized in one place.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-category="seo">
+                <div class="category-icon">SEO</div>
+                <h3>SEO Tools</h3>
+                <p>Improve your website and search engine performance.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+            <div class="category-card" data-category="text">
+                <div class="category-icon">T</div>
+                <h3>Text Tools</h3>
+                <p>Write, edit and analyze your text quickly.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+            <div class="category-card" data-category="developer">
+                <div class="category-icon">&lt;/&gt;</div>
+                <h3>Developer Tools</h3>
+                <p>Useful utilities for developers and programmers.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+            <div class="category-card" data-category="security">
+                <div class="category-icon">✓</div>
+                <h3>Security Tools</h3>
+                <p>Create secure passwords and protect your data.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+            <div class="category-card" data-category="image">
+                <div class="category-icon">IMG</div>
+                <h3>Image Tools</h3>
+                <p>Simple tools for working with images.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+            <div class="category-card" data-category="utility">
+                <div class="category-icon">⚙</div>
+                <h3>Utility Tools</h3>
+                <p>Everyday tools that save you time.</p>
+                <span>Explore Tools →</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- TOOLS -->
+<section class="section tools-section" id="tools">
+
+    <div class="container">
+
+        <div class="tools-header">
+
+            <div class="section-heading left">
+                <span>ALL TOOLS</span>
+                <h2>Popular tools</h2>
+                <p>Simple, fast and completely free.</p>
+            </div>
+
+            <div class="tool-filters">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="seo">SEO</button>
+                <button class="filter" data-filter="text">Text</button>
+                <button class="filter" data-filter="developer">Developer</button>
+                <button class="filter" data-filter="security">Security</button>
+            </div>
+
+        </div>
+
+
+        <div class="tools-grid" id="toolsGrid">
+
+            <!-- TOOL 1 -->
+            <div class="tool-card" data-category="seo" data-name="meta tag generator">
+
+                <div class="tool-top">
+                    <div class="tool-icon blue">SEO</div>
+                    <span class="tool-label">POPULAR</span>
+                </div>
+
+                <h3>Meta Tag Generator</h3>
+
+                <p>
+                    Generate SEO-friendly meta titles and descriptions.
+                </p>
+
+                <button class="open-tool" data-tool="meta">
+                    Use Tool →
+                </button>
+
+            </div>
+
+
+            <!-- TOOL 2 -->
+            <div class="tool-card" data-category="text" data-name="word counter">
+
+                <div class="tool-top">
+                    <div class="tool-icon cyan">WC</div>
+                </div>
+
+                <h3>Word Counter</h3>
+
+                <p>
+                    Count words, characters and sentences instantly.
+                </p>
+
+                <button class="open-tool" data-tool="counter">
+                    Use Tool →
+                </button>
+
+            </div>
+
+
+            <!-- TOOL 3 -->
+            <div class="tool-card" data-category="security" data-name="password generator">
+
+                <div class="tool-top">
+                    <div class="tool-icon blue">PW</div>
+                    <span class="tool-label">SECURE</span>
+                </div>
+
+                <h3>Password Generator</h3>
+
+                <p>
+                    Generate strong and secure random passwords.
+                </p>
+
+                <button class="open-tool" data-tool="password">
+                    Use Tool →
+                </button>
+
+            </div>
+
+
+            <!-- TOOL 4 -->
+            <div class="tool-card" data-category="developer" data-name="json formatter">
+
+                <div class="tool-top">
+                    <div class="tool-icon cyan">{ }</div>
+                </div>
+
+                <h3>JSON Formatter</h3>
+
+                <p>
+                    Format and organize JSON data in seconds.
+                </p>
+
+                <button class="open-tool" data-tool="json">
+                    Use Tool →
+                </button>
+
+            </div>
+
+
+            <!-- TOOL 5 -->
+            <div class="tool-card" data-category="developer" data-name="base64 encoder decoder">
+
+                <div class="tool-top">
+                    <div class="tool-icon blue">64</div>
+                </div>
+
+                <h3>Base64 Encoder</h3>
+
+                <p>
+                    Encode or decode Base64 strings easily.
+                </p>
+
+                <button class="open-tool" data-tool="base64">
+                    Use Tool →
+                </button>
+
+            </div>
+
+
+            <!-- TOOL 6 -->
+            <div class="tool-card" data-category="text" data-name="case converter">
+
+                <div class="tool-top">
+                    <div class="tool-icon cyan">Aa</div>
+                </div>
+
+                <h3>Case Converter</h3>
+
+                <p>
+                    Convert your text to uppercase or lowercase.
+                </p>
+
+                <button class="open-tool" data-tool="case">
+                    Use Tool →
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="noResults" class="no-results">
+            No tools found.
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="features" id="features">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>WHY WEBPILOT</span>
+            <h2>Built to make your life easier</h2>
+            <p>Powerful tools without complicated software.</p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature">
+                <div class="feature-number">01</div>
+                <h3>Fast & Simple</h3>
+                <p>
+                    Get your work done quickly with clean and
+                    easy-to-use tools.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-number">02</div>
+                <h3>Completely Free</h3>
+                <p>
+                    Use our tools without expensive subscriptions
+                    or hidden charges.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-number">03</div>
+                <h3>Privacy First</h3>
+                <p>
+                    Your information stays in your browser whenever
+                    possible.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-content">
+
+            <span>ABOUT WEBPILOT</span>
+
+            <h2>
+                One place for all
+                your everyday tools.
+            </h2>
+
+            <p>
+                WebPilot brings useful online utilities together
+                into one simple and modern platform.
+            </p>
+
+            <p>
+                Whether you're a student, developer, marketer,
+                designer or business owner, WebPilot helps you
+                get more done.
+            </p>
+
+            <button class="get-started about-btn">
+                Explore Tools
+            </button>
+
+        </div>
+
+
+        <div class="about-visual">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="pilot-center">W</div>
+
+            <div class="floating-card card-one">
+                ⚡ Fast
+            </div>
+
+            <div class="floating-card card-two">
+                🔒 Secure
+            </div>
+
+            <div class="floating-card card-three">
+                ✓ Free
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span>GET STARTED</span>
+
+            <h2>
+                Ready to work smarter?
+            </h2>
+
+            <p>
+                Explore our free online tools and get more done today.
+            </p>
+
+            <button class="cta-btn" onclick="document.getElementById('tools').scrollIntoView()">
+                Explore Tools →
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">W</span>
+                <span>Web<span>Pilot</span></span>
+            </a>
+
+            <p>
+                Simple, powerful and free online tools
+                for everyone.
+            </p>
+
+        </div>
+
+        <div>
+            <h4>Tools</h4>
+            <a href="#tools">SEO Tools</a>
+            <a href="#tools">Text Tools</a>
+            <a href="#tools">Developer Tools</a>
+            <a href="#tools">Security Tools</a>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <div>
+            <h4>Help</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Support</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            © 2026 WebPilot. All rights reserved.
+        </div>
+    </div>
+
+</footer>
+
+
+<!-- TOOL MODAL -->
+<div class="modal" id="toolModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeModal">×</button>
+
+        <div id="toolInterface"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
